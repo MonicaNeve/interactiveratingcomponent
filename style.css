@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 22%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+body{
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.9em;
+}
+/*  CONTAINER HOW-DID */
+.how_container, .thank_you_container{
+    background-color: var(--DarkBlue);
+    width: 376px;
+    border-radius: 15px;
+    margin: 14rem auto 5rem;
+    padding: 1.5rem;
+}
+.how_container_icon, .how_container_number > button {
+    background-color: var(--MediumGrey);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 2.1rem;
+    color: var(--LightGrey);
+    border: none;
+}
+.how_container_title, .thank_you_container_title{
+    color: var(--White);
+    margin-bottom: 1.4rem;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.how_container_paragrah, .thank_you_container_paragrah{
+    color: var(--LightGrey);
+    margin-bottom: 1.9rem;
+    letter-spacing: 0.9px;
+}
+.how_container_number{
+    display: flex;
+    justify-content: space-between;
+}
+.how_container_number > button:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+    cursor: pointer;
+}
+.how_container_number > button:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+.how_container_button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.how_container_button:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+    cursor: pointer;
+}
+/* CONTAINER THANK-YOU */
+.thank_you_container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.thank_you_container_image{
+    width: 150px;
+    margin-bottom: 1.5rem;
+}
+.thank_you_container_result{
+    background-color: var(--MediumGrey);
+    width: 10rem;
+    height: 2rem ;
+    border-radius: 50px;
+    color: var(--Orange);
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 1.9rem;
+    font-size: 0.9em;
+}
+.thank_you_container_paragrah{
+    text-align: center;
+}
+/* Descktop */
+@media (min-width: 600px) {
+    .how_container, .thank_you_container{
+        width: 412px;
+        padding: 34px;
+    }
+    .how_container_icon, .how_container_number > button {
+        width: 3rem;    
+    }
+    .how_container_title, .thank_you_container_title{
+        font-size: 1.9em;
+    }
+    .how_container_paragrah, .thank_you_container_paragrah{
+        font-size: 1.07em; 
+    }
+    .thank_you_container_result{
+        font-size: 1em;
+        width: 196px;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
