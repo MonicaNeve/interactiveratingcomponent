@@ -22,7 +22,7 @@ body{
     background-color: var(--DarkBlue);
     width: 350px;
     border-radius: 15px;
-    margin: 2.5rem auto 3.5rem;
+    margin: 3rem auto 4rem;
     padding: 1.5rem;
 }
 .how_container_icon, .how_container_number > button {
