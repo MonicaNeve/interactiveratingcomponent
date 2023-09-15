@@ -105,6 +105,7 @@ body{
 }
 /* Descktop */
 @media (min-width: 600px) {
+
     .how_container, .thank_you_container{
         width: 412px;
         padding: 34px;
@@ -122,11 +123,14 @@ body{
         font-size: 1em;
         width: 196px;
     }
-}
-.attribution { 
+    }
+    .attribution { 
     font-size: 11px; 
     text-align: center; 
-}
-.attribution a {
+    display: none;
+    }
+    .attribution a {
      color: hsl(228, 45%, 44%); 
-}
+    }
+
+
