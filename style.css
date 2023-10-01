@@ -15,8 +15,8 @@
 body{
     background-color: var(--VeryDarkBlue);
     font-family: 'Overpass', sans-serif;
-    font-size: 0.9em;
-}
+    font-size: 0.9em; 
+
 /*  CONTAINER HOW-DID */
 .how_container, .thank_you_container{
     background-color: var(--DarkBlue);
@@ -24,6 +24,7 @@ body{
     border-radius: 15px;
     margin: 3rem auto 4rem;
     padding: 1.5rem;
+   
 }
 .how_container_icon, .how_container_number > button {
     background-color: var(--MediumGrey);
@@ -132,5 +133,6 @@ body{
     .attribution a {
      color: hsl(228, 45%, 44%); 
     }
+}
 
 
