@@ -1,2 +1,2 @@
 # interactiveratingcomponent
- Projeto 
+ Projeto html css e javascript
